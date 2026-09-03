@@ -114,9 +114,21 @@ nav a:hover {
     transition: .2s;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-    background: #e4bd22;
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid #d4a900;
+}
+
+.btn-outline:hover {
+    background: #d4a900;
+    color: #102f2f;
 }
 
 .section {
@@ -141,8 +153,34 @@ nav a:hover {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1.25fr;
     gap: 25px;
+    align-items: stretch;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,.07);
+    transition: .25s;
+}
+
+.card#transport {
+    border: 2px solid #d4a900;
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+}
+
+.card#transport .card-image {
+    height: 250px;
+}
+
+.card#transport h3 {
+    font-size: 30px;
+}
+
+.card#transport .card-content {
+    padding: 32px;
 }
 
 .card {
@@ -165,8 +203,8 @@ nav a:hover {
 
 .import-image {
     background-image:
-        url("https://images.unsplash.com/photo-1586528116493-da8b5b8a8b9a?auto=format&fit=crop&w=1000&q=80");
-}
+        url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=85");
+    }
 
 .realestate-image {
     background-image:
@@ -361,7 +399,17 @@ footer {
             real estate and professional transportation services.
         </p>
 
-        <a href="#services" class="btn">Explore Our Services</a>
+        <div class="hero-buttons">
+
+    <a href="#transport" class="btn">
+        🚗 Book a Car Ride
+    </a>
+
+    <a href="#services" class="btn btn-outline">
+        Explore Our Services
+    </a>
+
+        </div>
 
     </div>
 </section>
