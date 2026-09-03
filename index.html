@@ -1,170 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hadz Global | Commodity Export, Trade Operations & Other Services</title>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ6D3EZJVS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-RQ6D3EZJVS');
-</script>
-<meta name="description" content="Hadz Global provides import and export facilitation, real estate access, and health tourism services across Africa, the Middle East and Europe.">
-<meta name="keywords" content="import export Africa, trade facilitation Nigeria, real estate Africa, health tourism, Middle East trade">
-  <style>
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; line-height:1.6; color:#222; }
-    header { background:#0f3d3f; color:#fff; padding:20px 40px; }
-    header h1 { margin:0; font-size:28px; }
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 2px;
-    text-transform: uppercase
-    }
-    nav a {
-  color: #f5f5f5;
-  font-weight: 600;
-    }; margin-right:18px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:#D4A017; }
-    section { padding:60px 40px; }
-    .hero { background:#f4f6f6; }
-    .hero h2 { font-size:42px; margin-bottom:12px; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { border:1px solid #ddd; border-radius:8px; padding:20px; background:#fff; }
-    section h2 { color:#0f3d3e; }
-    .card h3 { margin-top:0; color:#0f3d3e; }
-    .locations { background:#f9f9f9; }
-    footer { background:#0f3d3e; color:#fff; padding:30px 40px; }
-    .hero p {
-  font-size: 18px;
-  color: #444;
-  max-width: 680px;
-    }
-    .logo {
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
+<title>Hadz Global | Import & Export, Real Estate & Transport</title>
+
+<meta name="description" content="Hadz Global provides import and export facilitation, real estate services, and professional airport and private transport solutions.">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.logo-main {
-  color: #ffffff;
+html {
+    scroll-behavior: smooth;
 }
 
-.logo-sub {
-  color: #D4A017; /* gold accent */
-  margin-left: 6px;
-  font-weight: 700;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d2424;
+    line-height: 1.6;
+    background: #f7f8f7;
 }
-  .btn {
-  display: inline-block;
-  background: #0f3d3e;
-  color: #fff;
-  padding: 12px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #D4A017;
+
+header {
+    background: #0d4141;
+    color: white;
+    padding: 22px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #d4a900;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d4a900;
+}
+
+.hero {
+    background:
+        linear-gradient(rgba(7,48,48,.82), rgba(7,48,48,.82)),
+        url("https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    color: white;
+    padding: 110px 7%;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    max-width: 850px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #d4a900;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 20px;
+    color: #e5eeee;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4a900;
+    color: #102f2f;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .2s;
 }
 
 .btn:hover {
-  background: #b89614;
-}
-    .cta-box {
-  background:#f9f9f9;
-  border:1px solid #ddd;
-  padding:30px;
-  border-radius:10px;
-  max-width:700px;
-  margin:40px auto;
-  text-align:center;
+    transform: translateY(-2px);
+    background: #e4bd22;
 }
 
-.cta-box h3 {
-  margin-top:0;
-  color:#0f3d3e;
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 7%;
 }
 
-.cta-box a {
-  display:inline-block;
-  margin-top:15px;
-  background:#0f3d3e;
-  color:#fff;
-  padding:12px 22px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:bold;
+.section-title {
+    font-size: 40px;
+    color: #0d4141;
+    margin-bottom: 15px;
+    font-weight: 800;
 }
-  </style>
+
+.section-intro {
+    max-width: 720px;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,.07);
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+}
+
+.import-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1586528116493-da8b5b8a8b9a?auto=format&fit=crop&w=1000&q=80");
+}
+
+.realestate-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80");
+}
+
+.transport-image {
+    background-image:
+        url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=80");
+}
+
+.card-content {
+    padding: 28px;
+}
+
+.card h3 {
+    color: #0d4141;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 22px;
+}
+
+.card a {
+    color: #0d4141;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.feature {
+    background: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.feature-image {
+    min-height: 420px;
+    border-radius: 12px;
+    background:
+        url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+}
+
+.feature h2 {
+    font-size: 38px;
+    color: #0d4141;
+    margin-bottom: 20px;
+}
+
+.feature p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.feature ul {
+    margin: 20px 0 28px 20px;
+    color: #444;
+}
+
+.contact {
+    background: #0d4141;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #dce8e8;
+}
+
+.contact-info {
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background: #082f2f;
+    color: #c9d6d6;
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 18px 6%;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    nav {
+        width: 100%;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 75px 7%;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 65px 7%;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-image {
+        min-height: 280px;
+    }
+
+    .feature h2 {
+        font-size: 32px;
+    }
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">
-    <span class="logo-main">Hadz</span>
-    <span class="logo-sub">Global</span>
-    
-  </div>
-  <nav>...</nav>
-</header> 
-  </nav>
+    <div class="header-inner">
+
+        <div class="logo">
+            Hadz <span>Global</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#import-export">Import & Export</a>
+            <a href="#real-estate">Real Estate</a>
+            <a href="#transport">TransPort</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
 </header>
 
-<section class="hero">
-  <h1>Commodity Export and Trade Operations</h1>
-  <p>
-Hadz Global is an Africa-focused commodity export and trade facilitation firm connecting verified suppliers with international buyers across the Middle East, Asia, and Europe.
-We specialize in structured export coordination, compliance support, and reliable trade execution across approved African trade corridors.
-  </p>
 
-  <a href="#contact" class="btn">Request Sourcing Support</a>
-    </section>
-  </ul>
+<section class="hero" id="home">
+    <div class="hero-content">
 
-<section id="realestate" class="page">
-  <h2>Real Estate Services</h2>
-  <p>We assist clients in sourcing and investment facilitation in selected international markets.</p>
-  <ul>
+        <h1>
+            Connecting Africa to
+            <span>Global Opportunities.</span>
+        </h1>
+
+        <p>
+            Hadz Global provides practical solutions in international trade,
+            real estate and professional transportation services.
+        </p>
+
+        <a href="#services" class="btn">Explore Our Services</a>
+
+    </div>
 </section>
 
-<section id="tourism" class="page">
-  <h2>Tourism Services
-  </h2>We provide health and general tourism coordination, including hospital connections, accommodation assistance, and travel support in selected destinations.
-Optional bullets (MAX 3):
-Health tourism coordination
-Accommodation and local support
-Business and leisure travel assistance</li>
-  </ul>
+
+<section class="section" id="services">
+
+    <h2 class="section-title">What We Do</h2>
+
+    <p class="section-intro">
+        Three focused business segments serving individuals,
+        companies and international partners.
+    </p>
+
+    <div class="services">
+
+        <div class="card" id="import-export">
+
+            <div class="card-image import-image"></div>
+
+            <div class="card-content">
+
+                <h3>Import & Export</h3>
+
+                <p>
+                    Commodity sourcing, export coordination and
+                    trade facilitation connecting African suppliers
+                    with international buyers.
+                </p>
+
+                <a href="#contact">Make a Trade Inquiry →</a>
+
+            </div>
+        </div>
+
+
+        <div class="card" id="real-estate">
+
+            <div class="card-image realestate-image"></div>
+
+            <div class="card-content">
+
+                <h3>Real Estate</h3>
+
+                <p>
+                    Property sourcing and investment support for
+                    residential and commercial opportunities in
+                    selected international markets.
+                </p>
+
+                <a href="#contact">Request Property Support →</a>
+
+            </div>
+        </div>
+
+
+        <div class="card" id="transport">
+
+            <div class="card-image transport-image"></div>
+
+            <div class="card-content">
+
+                <h3>TransPort by Hadz</h3>
+
+                <p>
+                    Professional airport transfers and private
+                    transportation designed for business travellers,
+                    visitors and residents.
+                </p>
+
+                <a href="#contact">Book a Transfer →</a>
+
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <div class="contact-box">
-    <p><strong>Phone / WhatsApp:</strong><br />+20 122 715 7774</p>
-    <p><strong>Service Coverage:</strong><br />Africa • Middle East • China • Europe</p>
-    <a href="https://wa.me/201227157774" class="btn">Chat on WhatsApp</a>
-  </div>
 
-<section id="contact" class="page">
-  <h2>Contact Us</h2>
-  <p>
-    Phone / WhatsApp: +201227157774 <br>
-    Email: info@hadzbusiness.com
-  </p>
+<section class="feature">
+
+    <div class="section feature-grid">
+
+        <div class="feature-image"></div>
+
+        <div>
+
+            <h2>Built for Cross-Border Business</h2>
+
+            <p>
+                Hadz Global works across Africa and international
+                markets to simplify sourcing, movement and access
+                to business opportunities.
+            </p>
+
+            <ul>
+                <li>International trade facilitation</li>
+                <li>Verified sourcing and coordination</li>
+                <li>Property and investment support</li>
+                <li>Professional transportation services</li>
+            </ul>
+
+            <a href="#contact" class="btn">Work With Us</a>
+
+        </div>
+
+    </div>
+
 </section>
+
+
+<section class="contact" id="contact">
+
+    <div class="section">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Looking for a supplier, property opportunity,
+            airport transfer or business support?
+            Contact Hadz Global.
+        </p>
+
+        <div class="contact-info">
+
+            <p>
+                <strong>Phone / WhatsApp:</strong><br>
+                <a href="https://wa.me/201227157774">
+                    +20 122 715 7774
+                </a>
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:info@hadzbusiness.com">
+                    info@hadzbusiness.com
+                </a>
+            </p>
+
+        </div>
+
+        <a
+            href="https://wa.me/201227157774"
+            class="btn"
+        >
+            Chat on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
 
 <footer>
-  <p>© 2026 Hadz Business & Services. Import & Export • Real Estate • Tourism.</p>
+
+    © 2026 Hadz Business & Services.
+    Hadz Global • Import & Export • Real Estate • TransPort
+
 </footer>
-  <section class="cta-box">
-  <h3>Interested in Sourcing or Trade Partnerships?</h3>
-  </p>
-  <a href="https://wa.me/201227157774" target="_blank">
-    Chat with us on WhatsApp
-  </a>
-  </section>
 
 </body>
-</html>
+  </html>
